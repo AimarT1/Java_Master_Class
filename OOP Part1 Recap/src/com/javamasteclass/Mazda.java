@@ -1,0 +1,36 @@
+package com.javamasteclass;
+
+public class Mazda extends Car_I {
+    private int milagege;
+
+    public Mazda() {
+        super("Mazda", "middle", 0, 0, "6", "2.0 D", true, "Black", 0);
+        this.milagege = 236_000;
+    }
+
+    public void accelerate(int rate){
+        int newSpeed = getCurrentSpeed() + rate;
+        if (newSpeed == 0){
+            stop();
+            changeGear(1);
+        } else if (newSpeed > 0 && newSpeed <= 20){
+            changeGear(2);
+        }else if (newSpeed > 20 && newSpeed <= 30){
+            changeGear(3);
+        }else if (newSpeed > 30 && newSpeed <= 50) {
+            changeGear(4);
+        }else if (newSpeed > 50&& newSpeed <= 70){
+                changeGear(5);
+        }else{
+            changeGear(6);
+        }
+
+        if (newSpeed > 0){
+            changeSpeed(newSpeed,getCurrentdirection());
+        }
+    }
+
+    public int getMilagege() {
+        return milagege;
+    }
+}
