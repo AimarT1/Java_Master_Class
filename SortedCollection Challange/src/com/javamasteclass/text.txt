@@ -1,0 +1,17 @@
+Create a stockitem class:
+fileds you need:
+name,quantitiy,price, reserve
+you need to implemment the compare method to comapare objects.
+setter to adjust stock.
+methodst to reserve stockiunreserve and finalize stock.
+
+Create a stocklist of stockitems class:
+store it as a Linked hashmap.
+Medtod to add items to stocklist, sell items from stocklist,
+reserve and unresreve items from the list.
+
+Create a basket class:
+fields:
+name, and map of listitems
+methods to add and remove items from the basket, and to clear the basket after completion.
+
